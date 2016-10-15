@@ -1,0 +1,68 @@
+
+--
+-- Table structure for table `vosanotot`
+--
+
+CREATE TABLE `vosanotot` (
+  `kilpailu` varchar(15) NOT NULL,
+  `tietue` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  `sarja` varchar(12) DEFAULT NULL,
+  `seura` varchar(50) DEFAULT NULL,
+  `joukkue` int(11) DEFAULT 0,
+  `joukkid` int(11) DEFAULT NULL,
+  `joukkuenimi` varchar(15) DEFAULT NULL,
+  `maa` varchar(3) DEFAULT NULL,
+  `piiri` int(11) DEFAULT NULL,
+  `ilmlista` int(11) DEFAULT NULL,
+  `piste1` int(11) DEFAULT NULL,
+  `piste2` int(11) DEFAULT NULL,
+  `piste3` int(11) DEFAULT NULL,
+  `era` int(11) DEFAULT NULL,
+  PRIMARY KEY (`kilpailu`,`tietue`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Table structure for table `osuudet`
+--
+
+CREATE TABLE `osuudet` (
+  `kilpailu` varchar(15) NOT NULL,
+  `tietue` int(11) NOT NULL,
+  `osuus` int(11) NOT NULL,
+  `lisno` int(11) DEFAULT 0,
+  `sukunimi` varchar(30) DEFAULT NULL,
+  `etunimi` varchar(30) DEFAULT NULL,
+  `arvo` varchar(15) DEFAULT NULL,
+  `seura` varchar(30) DEFAULT NULL,
+  `badge` int(11) DEFAULT NULL,
+  `badge2` int(11) DEFAULT NULL,
+  `laina` char(1) DEFAULT NULL,
+  `laina2` char(1) DEFAULT NULL,
+  `rata` varchar(20) DEFAULT NULL,
+  `selitys` varchar(20) DEFAULT NULL,
+  `tlahto` int(11) DEFAULT NULL,
+  `tlahtotime` time DEFAULT NULL,
+  `lahtolaji` int(11) DEFAULT 0,
+  `keskhyl` varchar(10) DEFAULT NULL,
+  `ampsakot` varchar(8) DEFAULT NULL,
+  `sakko` int(11) DEFAULT NULL,
+  `gps`  char(1) DEFAULT NULL,
+  `ossija` int(11) DEFAULT NULL,
+  PRIMARY KEY (`kilpailu`,`tietue`,`osuus`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Table structure for table `vtulos`
+--
+
+CREATE TABLE `vtulos` (
+  `kilpailu` varchar(15) NOT NULL,
+  `tietue` int(11) NOT NULL,
+  `osuus` int(11) NOT NULL,
+  `piste` int(11) NOT NULL DEFAULT '0',
+  `aika` int(11) DEFAULT NULL,
+  `aikatime` time DEFAULT NULL,
+  `sija` int(11) DEFAULT NULL,
+  PRIMARY KEY (`kilpailu`,`tietue`,`osuus`,`piste`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

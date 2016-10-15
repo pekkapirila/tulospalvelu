@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{69B21771-82DC-4808-85CE-504A27B833ED}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Tputil-XE.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DBboxm-XE.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Tputil-XE">
+        <MSBuild Projects="Tputil-XE.cbproj"/>
+    </Target>
+    <Target Name="Tputil-XE:Clean">
+        <MSBuild Projects="Tputil-XE.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Tputil-XE:Make">
+        <MSBuild Projects="Tputil-XE.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="DBboxm-XE">
+        <MSBuild Projects="DBboxm-XE.cbproj"/>
+    </Target>
+    <Target Name="DBboxm-XE:Clean">
+        <MSBuild Projects="DBboxm-XE.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DBboxm-XE:Make">
+        <MSBuild Projects="DBboxm-XE.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Tputil-XE;DBboxm-XE"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Tputil-XE:Clean;DBboxm-XE:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Tputil-XE:Make;DBboxm-XE:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

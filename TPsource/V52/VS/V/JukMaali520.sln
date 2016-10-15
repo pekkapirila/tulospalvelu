@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JukMaali", "JukMaali520.vcxproj", "{4912FC52-7031-485B-BB09-903F4293DA71}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JukLuenta", "JukLuenta520.vcxproj", "{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug250|Win32 = Debug250|Win32
+		Release|Win32 = Release|Win32
+		Release150os|Win32 = Release150os|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4912FC52-7031-485B-BB09-903F4293DA71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4912FC52-7031-485B-BB09-903F4293DA71}.Debug|Win32.Build.0 = Debug|Win32
+		{4912FC52-7031-485B-BB09-903F4293DA71}.Debug250|Win32.ActiveCfg = Debug250|Win32
+		{4912FC52-7031-485B-BB09-903F4293DA71}.Debug250|Win32.Build.0 = Debug250|Win32
+		{4912FC52-7031-485B-BB09-903F4293DA71}.Release|Win32.ActiveCfg = Release|Win32
+		{4912FC52-7031-485B-BB09-903F4293DA71}.Release|Win32.Build.0 = Release|Win32
+		{4912FC52-7031-485B-BB09-903F4293DA71}.Release150os|Win32.ActiveCfg = Release150os|Win32
+		{4912FC52-7031-485B-BB09-903F4293DA71}.Release150os|Win32.Build.0 = Release150os|Win32
+		{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}.Debug|Win32.Build.0 = Debug|Win32
+		{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}.Debug250|Win32.ActiveCfg = Debug250|Win32
+		{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}.Debug250|Win32.Build.0 = Debug250|Win32
+		{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}.Release|Win32.ActiveCfg = Release|Win32
+		{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}.Release|Win32.Build.0 = Release|Win32
+		{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}.Release150os|Win32.ActiveCfg = Release150os|Win32
+		{9CA01F8D-6D6F-458E-83F6-5FB077B9C1FF}.Release150os|Win32.Build.0 = Release150os|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

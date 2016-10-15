@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.856,=C:\Users\Pekka\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.772,E:\BUILDER\TPUTILv2\UnitTest.h=C:\Users\Pekka\Documents\RAD Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.235,E:\BUILDER\cbHk\TextFileClass.cpp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.784,E:\BUILDER\TPUTILv2\LibTest.cbproj=C:\Users\Pekka\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.471,=E:\BUILDER\libXE\debug_build\Tputil-XE.lib</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.654,=C:\Users\Pekka\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.636,=C:\Users\Pekka\Documents\RAD Studio\Projects\Project1.res</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.772,E:\BUILDER\TPUTILv2\UnitTest.cpp=C:\Users\Pekka\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.772,E:\BUILDER\TPUTILv2\UnitTest.dfm=C:\Users\Pekka\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.557,=E:\BUILDER\cbHk\TextFileClass.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.011,=E:\BUILDER\cbHk\TextFileClass.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.252,E:\BUILDER\cbHk\TextFileClass.cpp=</Transaction>
+    <Transaction>2011.11.20 01:26:41.010,=E:\TPsource\tputilv2\TextFileClass.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

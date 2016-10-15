@@ -1,0 +1,81 @@
+
+--
+-- Table structure for table `osanotot`
+--
+
+CREATE TABLE `osanotot` (
+  `kilpailu` varchar(15) NOT NULL,
+  `tietue` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  `lisno` int(11) DEFAULT NULL,
+  `intid` int(11) DEFAULT NULL,
+  `wrkoodi` varchar(20) DEFAULT NULL,
+  `sukunimi` varchar(30) DEFAULT NULL,
+  `etunimi` varchar(30) DEFAULT NULL,
+  `arvo` varchar(15) DEFAULT NULL,
+  `seura` varchar(30) DEFAULT NULL,
+  `seuralyh` varchar(15) DEFAULT NULL,
+  `yhdistys` varchar(15) DEFAULT NULL,
+  `joukkue` varchar(15) DEFAULT NULL,
+  `maa` varchar(3) DEFAULT NULL,
+  `piiri` int(11) DEFAULT NULL,
+  `ilmlista` int(11) DEFAULT NULL,
+  `piste1` int(11) DEFAULT NULL,
+  `piste2` int(11) DEFAULT NULL,
+  `piste3` int(11) DEFAULT NULL,
+  `sarja` varchar(12) DEFAULT NULL,
+  `sukup` char(1) DEFAULT NULL,
+  `ikasarja` int(11) DEFAULT NULL,
+  `synt` int(11) DEFAULT NULL,
+  `alisarja` int(11) DEFAULT NULL,
+  `arvryhma` int(11) DEFAULT NULL,
+  PRIMARY KEY (`kilpailu`,`tietue`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Table structure for table `osottopv`
+--
+
+CREATE TABLE `osottopv` (
+  `kilpailu` varchar(15) NOT NULL,
+  `tietue` int(11) NOT NULL,
+  `vaihe` int(11) NOT NULL DEFAULT '1',
+  `sarja` varchar(15) DEFAULT NULL,
+  `era` int(11) DEFAULT NULL,
+  `bib` int(11) DEFAULT NULL,
+  `badge` int(11) DEFAULT NULL,
+  `badge2` int(11) DEFAULT NULL,
+  `laina` char(1) DEFAULT NULL,
+  `laina2` char(1) DEFAULT NULL,
+  `rata` varchar(20) DEFAULT NULL,
+  `selitys` varchar(20) DEFAULT NULL,
+  `pvpiste1` int(11) DEFAULT NULL,
+  `pvpiste2` int(11) DEFAULT NULL,
+  `tlahto` int(11) DEFAULT NULL,
+  `tlahtotime` time DEFAULT NULL,
+  `keskhyl` varchar(10) DEFAULT NULL,
+  `ampsakot` varchar(8) DEFAULT NULL,
+  `tasoitus` int(11) DEFAULT NULL,
+  `sakko` int(11) DEFAULT NULL,
+  `gps`  char(1) DEFAULT NULL,
+  `qual`  char(1) DEFAULT NULL,
+  `yhtaika` int(11) DEFAULT NULL,
+  `yhtaikatime` time DEFAULT NULL,
+  `ysija` int(11) DEFAULT NULL,
+  PRIMARY KEY (`kilpailu`,`tietue`,`vaihe`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Table structure for table `tulos`
+--
+
+CREATE TABLE `tulos` (
+  `kilpailu` varchar(15) NOT NULL,
+  `tietue` int(11) NOT NULL,
+  `vaihe` int(11) NOT NULL DEFAULT '1',
+  `piste` int(11) NOT NULL DEFAULT '0',
+  `aika` int(11) DEFAULT NULL,
+  `aikatime` time DEFAULT NULL,
+  `sija` int(11) DEFAULT NULL,
+  PRIMARY KEY (`kilpailu`,`tietue`,`vaihe`,`piste`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

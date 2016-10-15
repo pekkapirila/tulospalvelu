@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tputilv2", "tputilv2.vcxproj", "{6F5C240A-2B71-455E-B0BD-C3F42183B089}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dbboxm", "dbboxm\dbboxm.vcxproj", "{0930ABAF-2E63-48CB-B38E-B7305E33D16F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F5C240A-2B71-455E-B0BD-C3F42183B089}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F5C240A-2B71-455E-B0BD-C3F42183B089}.Debug|Win32.Build.0 = Debug|Win32
+		{6F5C240A-2B71-455E-B0BD-C3F42183B089}.Release|Win32.ActiveCfg = Release|Win32
+		{6F5C240A-2B71-455E-B0BD-C3F42183B089}.Release|Win32.Build.0 = Release|Win32
+		{BF3A1A11-26CD-4A2B-911A-73E8F0144161}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF3A1A11-26CD-4A2B-911A-73E8F0144161}.Debug|Win32.Build.0 = Debug|Win32
+		{BF3A1A11-26CD-4A2B-911A-73E8F0144161}.Release|Win32.ActiveCfg = Release|Win32
+		{BF3A1A11-26CD-4A2B-911A-73E8F0144161}.Release|Win32.Build.0 = Release|Win32
+		{0930ABAF-2E63-48CB-B38E-B7305E33D16F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0930ABAF-2E63-48CB-B38E-B7305E33D16F}.Debug|Win32.Build.0 = Debug|Win32
+		{0930ABAF-2E63-48CB-B38E-B7305E33D16F}.Release|Win32.ActiveCfg = Release|Win32
+		{0930ABAF-2E63-48CB-B38E-B7305E33D16F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

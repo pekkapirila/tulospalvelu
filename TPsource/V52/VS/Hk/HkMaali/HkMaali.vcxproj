@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugV200|Win32">
+      <Configuration>DebugV200</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Demo|Win32">
+      <Configuration>Demo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseVA200|Win32">
+      <Configuration>ReleaseVA200</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>HkMaali</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugV200|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseVA200|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugV200|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseVA200|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\..\vc10\Hk\HkMaali\V52\Debug\</OutDir>
+    <IntDir>..\..\..\..\..\vc10\Hk\HkMaali\V52\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugV200|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\..\vc10\Hk\HkMaali\DebugV200\</OutDir>
+    <IntDir>..\..\..\..\..\vc10\Hk\HkMaali\DebugV200\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\..\TPexe\Hk\V521\</OutDir>
+    <IntDir>..\..\..\..\..\vc10\Hk\V52\HkMaali\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseVA200|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\..\TPexe\Hk\V51\200VA\</OutDir>
+    <IntDir>..\..\..\..\..\vc10\Hk\V51\HkMaaliVA200\</IntDir>
+    <TargetName>HkMaali200va</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\..\TPexe\Hk\V52\Demo\</OutDir>
+    <IntDir>..\..\..\..\..\vc10\Hk\V52\HkMaali\Demo\</IntDir>
+    <TargetName>HkMaaliDemo</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NON_CONFORMING_WCSTOK;_CRT_NON_CONFORMING_SWPRINTFS;_CONSOLE;BIT32;EMIT;GAZ;NREGNLY=32;MAX_LAHPORTTI=64;AUTOFILE;EMITFILE;MAALI;KONETUNN;TCPSIIRTO;SERVER;ENNAKOI;AUTOVA;VALUKIJA;UUSI;PISTEET;ORAVA;SEURAVAL;MAAKNT;EMITHTTP;TCPLUKIJA;LAJUNEN;VERTAA;SAKKOCOM;AIKAVERT;DBGFILE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TPsource\V52\Include;..\..\..\..\..\TPsource\V52\HkConsole;..\..\..\..\..\TPsource\V52\Hk;..\..\..\..\..\TPsource\V52\Tp</AdditionalIncludeDirectories>
+      <AdditionalOptions>/J %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\..\..\..\..\TPexe\lib\V52\VS\debug\tputilv2.lib;..\..\..\..\..\TPexe\lib\V52\VS\debug\dbboxm.lib;ws2_32.lib;winhttp.lib;commode.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugV200|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NON_CONFORMING_WCSTOK;_CRT_NON_CONFORMING_SWPRINTFS;_CONSOLE;VERSIONO=510;BIT32;EMIT;GAZ;NREGNLY=4;MAX_LAHPORTTI=64;AUTOFILE;EMITFILE;MAALI;KONETUNN;TCPSIIRTO;SERVER;ENNAKOI;AUTOVA;VALUKIJA;UUSI;PISTEET;ORAVA;SEURAVAL;MAAKNT;EMITHTTP;TCPLUKIJA;LAJUNEN;VERTAA;SAKKOCOM;AIKAVERT;VALUKU=200;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TPsource\V52\Include;..\..\..\..\..\TPsource\V52\HkConsole;..\..\..\..\..\TPsource\V52\Hk;..\..\..\..\..\TPsource\V52\Tp</AdditionalIncludeDirectories>
+      <AdditionalOptions>/J %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\..\..\..\..\TPexe\lib\V52\VS\debug\tputilv2.lib;..\..\..\..\..\TPexe\lib\V52\VS\debug\dbboxm.lib;ws2_32.lib;winhttp.lib;commode.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NON_CONFORMING_WCSTOK;_CRT_NON_CONFORMING_SWPRINTFS;_CONSOLE;BIT32;EMIT;GAZ;NREGNLY=32;MAX_LAHPORTTI=64;AUTOFILE;EMITFILE;MAALI;KONETUNN;TCPSIIRTO;SERVER;ENNAKOI;AUTOVA;VALUKIJA;UUSI;PISTEET;ORAVA;SEURAVAL;MAAKNT;EMITHTTP;TCPLUKIJA;LAJUNEN;VERTAA;SAKKOCOM;AIKAVERT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TPsource\V52\Include;..\..\..\..\..\TPsource\V52\HkConsole;..\..\..\..\..\TPsource\V52\Hk;..\..\..\..\..\TPsource\V52\Tp</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/J %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\..\..\..\..\TPexe\lib\V52\VS\release\tputilv2.lib;..\..\..\..\..\TPexe\lib\V52\VS\release\dbboxm.lib;ws2_32.lib;winhttp.lib;commode.obj;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseVA200|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NON_CONFORMING_WCSTOK;_CRT_NON_CONFORMING_SWPRINTFS;_CONSOLE;VERSIONO=510;BIT32;EMIT;GAZ;NREGNLY=4;MAX_LAHPORTTI=64;AUTOFILE;EMITFILE;MAALI;KONETUNN;TCPSIIRTO;SERVER;ENNAKOI;AUTOVA;VALUKIJA;UUSI;PISTEET;ORAVA;SEURAVAL;MAAKNT;EMITHTTP;TCPLUKIJA;LAJUNEN;VERTAA;SAKKOCOM;AIKAVERT;NDEBUG;VALUKU=200;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TPsource\V52\Include;..\..\..\..\..\TPsource\V52\HkConsole;..\..\..\..\..\TPsource\V52\Hk;..\..\..\..\..\TPsource\V52\Tp</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/J %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\..\..\..\..\TPexe\lib\V52\VS\release\tputilv2.lib;..\..\..\..\..\TPexe\lib\V52\VS\release\dbboxm.lib;ws2_32.lib;winhttp.lib;commode.obj;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Demo|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NON_CONFORMING_WCSTOK;_CRT_NON_CONFORMING_SWPRINTFS;_CONSOLE;BIT32;EMIT;GAZ;NREGNLY=4;MAX_LAHPORTTI=64;AUTOFILE;EMITFILE;MAALI;KONETUNN;TCPSIIRTO;SERVER;ENNAKOI;AUTOVA;VALUKIJA;UUSI;PISTEET;ORAVA;SEURAVAL;MAAKNT;EMITHTTP;TCPLUKIJA;LAJUNEN;VERTAA;SAKKOCOM;AIKAVERT;NDEBUG;DEMO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\TPsource\V52\Include;..\..\..\..\..\TPsource\V52\HkConsole;..\..\..\..\..\TPsource\V52\Hk;..\..\..\..\..\TPsource\V52\Tp</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/J %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\..\..\..\..\TPexe\lib\V52\VS\release\tputilv2.lib;..\..\..\..\..\TPexe\lib\V52\VS\release\dbboxm.lib;ws2_32.lib;winhttp.lib;commode.obj;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\HkConsole\GetHttp.h" />
+    <ClInclude Include="..\..\..\HkConsole\valinnat.h" />
+    <ClInclude Include="..\..\..\Hk\BuildNo.h" />
+    <ClInclude Include="..\..\..\Hk\HkConsoleDef.h" />
+    <ClInclude Include="..\..\..\Hk\HkDeclare.h" />
+    <ClInclude Include="..\..\..\Hk\HkDef.h" />
+    <ClInclude Include="..\..\..\INCLUDE\tputil.h" />
+    <ClInclude Include="..\..\..\Tp\TpDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\com\gethttp.cpp" />
+    <ClCompile Include="..\..\..\com\winCom.cpp" />
+    <ClCompile Include="..\..\..\com\WinUDP.cpp" />
+    <ClCompile Include="..\..\..\HkConsole\HkCons0.cpp" />
+    <ClCompile Include="..\..\..\HkConsole\HkCons2.cpp" />
+    <ClCompile Include="..\..\..\HkConsole\HkCons3.cpp" />
+    <ClCompile Include="..\..\..\HkConsole\HkConsHelp.cpp" />
+    <ClCompile Include="..\..\..\HkConsole\HkKilp.cpp" />
+    <ClCompile Include="..\..\..\HkConsole\HkMain.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkAjat.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkApu.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkCom32.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkDat.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkEmit.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkGlobals.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkInit.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkIV.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkIx.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkMuotoilu.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkSak.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkSrj.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkTls.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkTulostus.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkXml.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkXmlTulokset.cpp" />
+    <ClCompile Include="..\..\..\Hk\HkXml_IOF30.cpp" />
+    <ClCompile Include="..\..\..\tputilv2\xmlparser.cpp" />
+    <ClCompile Include="..\..\..\Tp\TpApu.cpp" />
+    <ClCompile Include="..\..\..\Tp\TpComY.cpp" />
+    <ClCompile Include="..\..\..\Tp\TpLaitteet.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

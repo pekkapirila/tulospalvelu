@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F5C240A-2B71-455E-B0BD-C3F42183B089}</ProjectGuid>
+    <RootNamespace>tputil</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\TPexe\Lib\V52\VS\Debug</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\vc10\TpUtilV2\Debug</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\TPexe\Lib\V52\VS\Release</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\..\vc10\TpUtilV2\release</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;CONSOLELIB;UNICODE;_UNICODE;_CRT_NON_CONFORMING_SWPRINTFS;_DEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE;GDIPRINTER;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <PrecompiledHeaderOutputFile>.\Debug/TpUtilV2.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040b</Culture>
+    </ResourceCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\..\TPsource\V52\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;CONSOLELIB;_UNICODE;UNICODE;_CRT_NON_CONFORMING_WCSTOK;_CRT_NON_CONFORMING_SWPRINTFS;_LIB;_CRT_SECURE_NO_DEPRECATE;GDIPRINTER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <PrecompiledHeaderOutputFile>.\Release/TpUtilV2.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040b</Culture>
+    </ResourceCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\TpUtilV2\aakjarjs.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aakjarjs2.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\aakjarjws.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\aakjarjws2.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aikatos2.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aikatos2_s.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\AIKATOSH.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aikatosh_s.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Aikatosl.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aikatosl_s.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aikatost.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aikatost_s.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\aikatows2_s.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\aikatowsh_s.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\aikatowsl_s.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\aikatowst_s.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aiktostc.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\aiktostc_s.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\aiktowstc_s.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\ANSI2OEM.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\ATOLD.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\attnbeep.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\bsrchint.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Chint.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\CLEARFRA.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\CLREOL.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\ConsoleSize.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Conststr.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\CTRLHNDL.cpp" />
+    <ClCompile Include="..\..\tputilv2\DateNo.cpp" />
+    <ClCompile Include="..\..\tputilv2\dbindex.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Delchar.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\drawlines.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\Elimbl1.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Elimz.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Elimzb1.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\ERBEEP.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\esnimet-2.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\ESNIMET.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\GOTOXY.cpp" />
+    <ClCompile Include="..\..\tputilv2\haeStrIx.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Initcon.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inpknoo2.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inpknoos.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inpknoot.cpp" />
+    <ClCompile Include="..\..\tputilv2\Inputwstr.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Input_no.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputai2.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\INPUTAIH.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputaik.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputail.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputch.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputi_o.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputint.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputkno.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputlon.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputs_p.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inputstr.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Inschar.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Instroik.cpp" />
+    <ClCompile Include="..\..\tputilv2\IntInList.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Ioerr.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Itoa1.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Kbdrdy.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Kbflush_1.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\KBREADY.cpp" />
+    <ClCompile Include="..\..\tputilv2\kbready_w.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Kello.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\KEYFROMN.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\KHTOSTR.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\LOCASENA.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Locasesc.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\LOCASEST.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\LSWAB.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Lue_v_pv.cpp" />
+    <ClCompile Include="..\..\tputilv2\MbsWcs.cpp" />
+    <ClCompile Include="..\..\tputilv2\memnullcmp.cpp" />
+    <ClCompile Include="..\..\tputilv2\msdaytime.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\M_swab.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\mstimer.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\NIMIINT.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Nimilong.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\OEM2ANSI.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Pageedit.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Paiva.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\perr.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\poistano.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Prtbuf.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\PUTINT_R.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\QSORTINT.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\READKBD.cpp" />
+    <ClCompile Include="..\..\tputilv2\readkbd_w.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\SAVESCR.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\SCANCONV.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\SCATTRIB.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\SCCLRMSG.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\SCCURSET.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\SCCURST.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Scpclr.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Scwrite.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Select.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Selectxy.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\STPCVT.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\STPEXPAN.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\STPJUST.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\STPTABFY.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\STPXLATE.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\STR2AIKA.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Strtoai2.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\STRTOAIH.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Strtoaik.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Strtoail.cpp" />
+    <ClCompile Include="..\..\tputilv2\StrToDouble.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\STSCHIND.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\TextFileClass.cpp" />
+    <ClCompile Include="..\..\tputilv2\Trimline.cpp" />
+    <ClCompile Include="..\..\tputilv2\tuwupper2.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\T_TIME.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\T_time_l.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\TARKNO.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\TARKNOOS.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Tarknost.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\viwrrectw.cpp" />
+    <ClCompile Include="..\..\tputilv2\wconcat.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\wcr2oem.cpp" />
+    <ClCompile Include="..\..\tputilv2\wcscmpU.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\wPageedit.cpp" />
+    <ClCompile Include="..\..\tputilv2\Wrttext.cpp" />
+    <ClCompile Include="..\..\tputilv2\wSelectxy.cpp" />
+    <ClCompile Include="..\..\tputilv2\wxml_put.cpp" />
+    <ClCompile Include="..\..\tputilv2\wxml_set.cpp" />
+    <ClCompile Include="..\..\TPUTILv2\w_aakjarjs.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\TICK.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Timeticks.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Timofday.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\TRANSL.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Upcasesc.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\UPCASEST.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Vaihdanm.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Vidint.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\VIRDRECT.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\Viwrrect.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\winversion.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\WRITEERR.cpp" />
+    <ClCompile Include="..\..\tputilv2\xmlparser.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\xml_put.cpp" />
+    <ClCompile Include="..\..\TpUtilV2\xml_set.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\INCLUDE\Console.h" />
+    <ClInclude Include="..\..\INCLUDE\tptype.h" />
+    <ClInclude Include="..\..\INCLUDE\tputil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

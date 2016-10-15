@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HkMaali", "HkMaali\HkMaali.vcxproj", "{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{48783102-303D-44BE-A059-C4C14EC8AA40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugV200|Win32 = DebugV200|Win32
+		Demo|Win32 = Demo|Win32
+		Release|Win32 = Release|Win32
+		ReleaseVA200|Win32 = ReleaseVA200|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.Debug|Win32.ActiveCfg = Debug|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.Debug|Win32.Build.0 = Debug|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.DebugV200|Win32.ActiveCfg = DebugV200|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.DebugV200|Win32.Build.0 = DebugV200|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.Demo|Win32.ActiveCfg = Demo|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.Demo|Win32.Build.0 = Demo|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.Release|Win32.ActiveCfg = Release|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.Release|Win32.Build.0 = Release|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.ReleaseVA200|Win32.ActiveCfg = ReleaseVA200|Win32
+		{417E8FF5-68BA-49FF-96C8-73EEB8BBF813}.ReleaseVA200|Win32.Build.0 = ReleaseVA200|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
