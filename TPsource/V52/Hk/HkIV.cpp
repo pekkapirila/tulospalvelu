@@ -668,7 +668,7 @@ void tall_etulos(INT32 badge, INT32 t, INT32 tms, INT r_no, int Jono)
 				(NORMTULOS(purajak(itm.t) - kilp.pv[k_pv].tlahto) > 20*TUNTI ||
 				 NORMTULOS(purajak(itm.t) - kilp.pv[k_pv].tlahto) < estaneg))
 				 return;
-			if (kilp.TLahto() != TMAALI0 && (tls0 = kilp.maali(piste)) == TMAALI0 || (uusinaika && (abs((double) NORMKELLO(t - tls0)) < uusinaika))) {
+			if (kilp.TLahto() != TMAALI0 && (tls0 = kilp.maali(piste)) == TMAALI0 || (uusinaika && (abs((long) NORMKELLO(t - tls0)) < uusinaika))) {
 				tls0 = kilp.set_tulos(piste, pyoristatls(t, 1));
 				if (kilpparam.hyvHavaittu && kilp.tark() == L'E' && tls0 > 0 && tls0 < 12 * TUNTI)
 					kilp.set_tark(L'B');
@@ -2915,7 +2915,7 @@ INT tall_regnly(san_type *vastaus, INT r_no)
 					}
 				tmli = purajak(t);
 				}
-			if (olitulos == 0 || (uusinaika && olitulos == 1 && abs((double) NORMKELLO(tls - tls0)) < uusinaika)) {
+			if (olitulos == 0 || (uusinaika && olitulos == 1 && abs((long) NORMKELLO(tls - tls0)) < uusinaika)) {
 				tall_fl = 1;
 #if defined(UINTIxx)
 				if (era_lahdot && eralahto[era_akt] != TMAALI0*AIKAJAK) {
@@ -3426,7 +3426,7 @@ void tall_ec(UINT32 bdg, INT valeim, INT32 aika, INT kielto)
 				if (vaajat)
 					tall_rivi(aika_jono[0][1], &itm, NULL, NULL, 0, 0, 0, false);
 				tt = kilp.maali(pst);
-				if (pst >= 0 && (tt == TMAALI0 || (uusinaika && abs((double) NORMKELLO(vatime - tt)) < uusinaika))) {
+				if (pst >= 0 && (tt == TMAALI0 || (uusinaika && abs((long) NORMKELLO(vatime - tt)) < uusinaika))) {
 					vatime =  pyoristatls(vatime , 1);
 					kilp.set_tulos(pst, vatime);
 					EnterCriticalSection(&tall_CriticalSection);

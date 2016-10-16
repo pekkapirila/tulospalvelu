@@ -1,3 +1,7 @@
 TPexe
-TPsource
+vc10
+Debug
+*.sdf
+*.suo
+*.opensdf
 *.stat
