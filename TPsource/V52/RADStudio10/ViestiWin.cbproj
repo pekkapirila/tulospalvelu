@@ -142,7 +142,7 @@
         <IncludePath>..\ViestiWin\;..\tputilv2\;..\cbTp\;..\Tp\;..\Juk\;..\com\;..\INCLUDE\;$(IncludePath)</IncludePath>
         <BCC_IntegerSizedEnums>false</BCC_IntegerSizedEnums>
         <BRCC_IncludePath>..\COMM;$(BDS)\include;$(BDS)\include\vcl;$(BRCC_IncludePath)</BRCC_IncludePath>
-        <AllPackageLibs>vcl.lib;rtl.lib;vclie.lib;dbrtl.lib;dbexpress.lib;DbxCommonDriver.lib;DBXMySQLDriver.lib;IndySystem.lib;IndyProtocols.lib;IndyCore.lib;sbridge230.lib;vclx.lib</AllPackageLibs>
+        <AllPackageLibs>vcl.lib;rtl.lib;vclie.lib;dbrtl.lib;dbexpress.lib;DbxCommonDriver.lib;DBXMySQLDriver.lib;IndySystem.lib;IndyProtocols.lib;IndyCore.lib;sbridge240.lib;vclx.lib</AllPackageLibs>
         <TASM_IncludePath>..\COMM;$(BDS)\include;$(BDS)\include\vcl;$(TASM_IncludePath)</TASM_IncludePath>
         <DCC_IncludePath>..\COMM;.\;$(BDS)\lib;$(BDS)\lib\obj;$(DCC_IncludePath)</DCC_IncludePath>
         <BCC_IncludePath>$(BDS)\include;$(BCC_IncludePath)</BCC_IncludePath>
@@ -194,7 +194,7 @@
         <BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <LinkPackageStatics>IndyProtocols.lib;sbridge230.lib</LinkPackageStatics>
+        <LinkPackageStatics>IndyProtocols.lib;sbridge240.lib</LinkPackageStatics>
         <Icon_MainIcon>..\ViestiWin\ViestiWin_Icon.ico</Icon_MainIcon>
         <Defines>_DEBUG;$(Defines)</Defines>
         <ILINK_StackReserveSize>0x00800000</ILINK_StackReserveSize>
@@ -243,7 +243,7 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <ILINK_DisableIncrementalLinking>true</ILINK_DisableIncrementalLinking>
-        <LinkPackageStatics>IndyProtocols.lib;sbridge230.lib</LinkPackageStatics>
+        <LinkPackageStatics>IndyProtocols.lib;sbridge240.lib</LinkPackageStatics>
         <VerInfo_Build>1</VerInfo_Build>
         <Icon_MainIcon>..\ViestiWin\ViestiWin_Icon.ico</Icon_MainIcon>
         <Defines>NDEBUG;$(Defines)</Defines>
@@ -292,7 +292,7 @@
         <ILINK_DisableIncrementalLinking>true</ILINK_DisableIncrementalLinking>
         <VerInfo_Build>25</VerInfo_Build>
         <Icon_MainIcon>..\ViestiWin\ViestiWin_Icon.ico</Icon_MainIcon>
-        <LinkPackageStatics>IndyProtocols.lib;sbridge230.lib</LinkPackageStatics>
+        <LinkPackageStatics>IndyProtocols.lib;sbridge240.lib</LinkPackageStatics>
         <ILINK_HeapReserveSize>0x03000000</ILINK_HeapReserveSize>
         <IntermediateOutputDir>150os\Release_Build\</IntermediateOutputDir>
         <ILINK_HeapCommitSize>0x00400000</ILINK_HeapCommitSize>

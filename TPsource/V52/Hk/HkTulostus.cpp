@@ -988,7 +988,7 @@ void autotulostus(void)
 		  prior[i] = 0;
 		  continue;
 		  }
-	  k = max(k,prior[i]);
+	  k = std::max(k,prior[i]);
 	  if( prior[i] > korkein ) {
 		 srj = i;
 			korkein = prior[i];
@@ -1260,7 +1260,7 @@ void putfldstr(wchar_t *rivi, wchar_t *str, INT pos, INT len, INT oik)
    INT v, ll;
 
    ll = wcslen(str);
-   ll = min(ll, len);
+   ll = std::min(ll, len);
    if (ll <= 0) return;
    if (oik)
       v = pos + len - ll;
@@ -1296,7 +1296,7 @@ void putfld(tulostusparamtp *tulprm, wchar_t *str, INT pos, INT len, INT oik, IN
    str = str2;
 	pos += tulprm->tulmuot.marg;
    ll = wcslen(str);
-   ll = min(ll, len);
+   ll = std::min(ll, len);
 	if (ll <= 0) {
 		free(str2);
 		return;
@@ -1550,7 +1550,7 @@ void init_ps(tulostusparamtp *tulprm)
 	  sendwline(L"\x04",tulprm->lstf);
 	  p = psinit+2;
 	  while (len) {
-		 n = min(len, sizeof(tulprm->sline)/2-1);
+		 n = std::min(len, sizeof(tulprm->sline)/2-1);
 		 wmemcpy(tulprm->sline, p, n);
 		 tulprm->sline[n] = 0;
 		 sendwline(tulprm->sline,tulprm->lstf);
@@ -2832,16 +2832,16 @@ static void outtulos_csv_5ott(kilptietue *kilp, INT sj, INT32 karkitls, tulostus
 	  if (sj) putintrightw(sj, rivi+dspflds[F_SJ].pos+dspflds[F_SJ].len-1);
       if (dspflds[F_KNO].len)
 		 putintrightw(kilp->id(), rivi+dspflds[F_KNO].pos+dspflds[F_KNO].len-1);
-      len = min((int)wcslen(kilp->nimi(st, 60, false)), dspflds[F_NIMI].len);
+	  len = std::min((int)wcslen(kilp->nimi(st, 60, false)), dspflds[F_NIMI].len);
       wmemcpy(rivi+dspflds[F_NIMI].pos, kilp->nimi(st, 60, false), len);
-	  len = min((int)wcslen(kilp->seuratieto(0)), dspflds[F_SRA].len);
+	  len = std::min((int)wcslen(kilp->seuratieto(0)), dspflds[F_SRA].len);
 	  wmemcpy(rivi+dspflds[F_SRA].pos, kilp->seuratieto(0), len);
 	  if ((tls = kilp->tulos2(tulprm->piste)) > 0 && kilp->hyv()) {
 			if (dspflds[F_TLS].len) {
 				AIKATOWSTRS(st,tls,0);
 				st[pvparam[k_pv].laika2] = 0;
 				elimwzb1(st);
-				len = min((int)wcslen(st), dspflds[F_TLS].len);
+				len = std::min((int)wcslen(st), dspflds[F_TLS].len);
 				wmemcpy(rivi+dspflds[F_TLS].pos+dspflds[F_TLS].len-len, st, len);
 				}
 			if (pst[k_pv] >= 0)
@@ -2882,16 +2882,16 @@ static void outtulos_5ott(int l, kilptietue *kilp, INT sj, int piste, INT32 kark
 	  if (sj) putintrightw(sj, rivi+dspflds[F_SJ].pos+dspflds[F_SJ].len-1);
       if (dspflds[F_KNO].len)
 		 putintrightw(kilp->id(), rivi+dspflds[F_KNO].pos+dspflds[F_KNO].len-1);
-      len = min((int)wcslen(kilp->nimi(st, 60, false)), dspflds[F_NIMI].len);
+	  len = std::min((int)wcslen(kilp->nimi(st, 60, false)), dspflds[F_NIMI].len);
 	  wmemcpy(rivi+dspflds[F_NIMI].pos, kilp->nimi(st, 60, false), len);
-	  len = min((int)wcslen(kilp->seuratieto(0)), dspflds[F_SRA].len);
+	  len = std::min((int)wcslen(kilp->seuratieto(0)), dspflds[F_SRA].len);
 	  wmemcpy(rivi+dspflds[F_SRA].pos, kilp->seuratieto(0), len);
 	  if ((tls = kilp->tulos2(tulprm->piste)) > 0 && kilp->hyv()) {
 			if (dspflds[F_TLS].len) {
 				AIKATOWSTRS(st,tls,0);
 				st[pvparam[k_pv].laika2] = 0;
 				elimwzb1(st);
-				len = min((int)wcslen(st), dspflds[F_TLS].len);
+				len = std::min((int)wcslen(st), dspflds[F_TLS].len);
 				wmemcpy(rivi+dspflds[F_TLS].pos+dspflds[F_TLS].len-len, st, len);
 				}
 			if (pst[k_pv] >= 0)
@@ -3389,7 +3389,7 @@ static INT prttulos(kilptietue *kilp, tulostusparamtp *tulprm, INT sj, INT32 tka
 			as[0] = 0;
 			as[pvparam[k_pv].laika2] = 0;
 			if (fld[F_TLS].len)
-				putfld(tulprm, as, aspos, min(aslen,(int)fld[F_TLS].len+2), fld[F_TLS].oik, 0);
+				putfld(tulprm, as, aspos, std::min(aslen,(int)fld[F_TLS].len+2), fld[F_TLS].oik, 0);
 			if (ase[0]) putfld(tulprm, ase, fld[F_ERO].pos, fld[F_ERO].len,
 				fld[F_ERO].oik, 0);
 			if (kilpparam.kilplaji == L'B') {
@@ -3786,16 +3786,16 @@ static void outtulos(INT l, kilptietue *kilp, INT sj, INT piste, INT32 karkitls,
 	  if (sj) putintrightw(sj, rivi+dspflds[F_SJ].pos+dspflds[F_SJ].len-1);
 	  if (dspflds[F_KNO].len)
 		 putintrightw(kilp->id(), rivi+dspflds[F_KNO].pos+dspflds[F_KNO].len-1);
-		len = min((int)wcslen(kilp->nimi(st, 60, false)), dspflds[F_NIMI].len);
+		len = std::min((int)wcslen(kilp->nimi(st, 60, false)), dspflds[F_NIMI].len);
 		wmemcpy(rivi+dspflds[F_NIMI].pos, kilp->nimi(st, 60, false), len);
 		if (dspflds[F_LISNO].len) {
 			st[0] = 0;
 		 if (kilp->lisno[0] > 0 && kilp->lisno[0] < 1000000L)
 			_ltow(kilp->lisno[0], st, 10);
-		 len = min((int)wcslen(st), dspflds[F_LISNO].len);
+		 len = std::min((int)wcslen(st), dspflds[F_LISNO].len);
 		 wmemcpy(rivi+dspflds[F_LISNO].pos+dspflds[F_LISNO].len-len, st, len);
 		 }
-		len = min((int)wcslen(kilp->seuratieto(0)), dspflds[F_SRA].len);
+		len = std::min((int)wcslen(kilp->seuratieto(0)), dspflds[F_SRA].len);
 	  wmemcpy(rivi+dspflds[F_SRA].pos, kilp->seuratieto(0), len);
 	  if ((tls = kilp->tulos2(piste, 2)) > 0 && kilp->hyv()) {
 
@@ -3831,7 +3831,7 @@ static void outtulos(INT l, kilptietue *kilp, INT sj, INT piste, INT32 karkitls,
 		{
 
 		  if (dspflds[F_TLS].len) {
-			len = min((int)pvparam[k_pv].laika2, dspflds[F_TLS].len);
+			len = std::min((int)pvparam[k_pv].laika2, dspflds[F_TLS].len);
 			wmemcpy(rivi+dspflds[F_TLS].pos, AIKATOWSTRS(st, tls,0)+pvparam[k_pv].laika2-len, len);
 			}
 		 if (dspflds[F_ERO].len) {
@@ -3840,7 +3840,7 @@ static void outtulos(INT l, kilptietue *kilp, INT sj, INT piste, INT32 karkitls,
 			   pos = pvparam[k_pv].laika2-len-2;
 			   }
 			else {
-			   len = min((int)pvparam[k_pv].laika2, dspflds[F_ERO].len);
+			   len = std::min((int)pvparam[k_pv].laika2, dspflds[F_ERO].len);
 			   pos = pvparam[k_pv].laika2-len;
 			   }
 			if (sj == 1)
@@ -3860,7 +3860,7 @@ static void outtulos(INT l, kilptietue *kilp, INT sj, INT piste, INT32 karkitls,
 		 (tls = kilp->tulos1(piste, maaliajat[Sarjat[kilp->Sarja()].mno[k_pv]-1])) > 0) {
 		 rivi[dspflds[F_TLS].pos-1] = L'(';
 		 rivi[dspflds[F_TLS].pos+dspflds[F_TLS].len] = L')';
-		 len = min((int)pvparam[k_pv].laika2, dspflds[F_TLS].len);
+		 len = std::min((int)pvparam[k_pv].laika2, dspflds[F_TLS].len);
 		 wmemcpy(rivi+dspflds[F_TLS].pos, AIKATOWSTRS(st, tls, 0)+pvparam[k_pv].laika2-len, len);
 		 }
 	  if (kilpparam.lsakmax > 0 && dspflds[F_SAK].len) {
@@ -4253,7 +4253,7 @@ static void htmltulos(kilptietue *kilp, int sj1, int sarja, tulostusparamtp *tul
 			(Sarjat[kilp->Sarja()].piilotatulos && (id == F_SJ || id == F_OSASJ)))
 			st[0] = 0;
 		else
-			kilp->strval(tulprm, st, min(199, fld->len), (pistefl == 2 && id == F_OSATLS) ? F_PIST : id, race, pst, sj1, opt);
+			kilp->strval(tulprm, st, std::min(199, fld->len), (pistefl == 2 && id == F_OSATLS) ? F_PIST : id, race, pst, sj1, opt);
 		if (taulufl) {
 /*			if (fld->oik)
 				wcscat(prs, L"<td align=right>");
@@ -4769,7 +4769,7 @@ int srjtullkm(int srj, tulostusparamtp *tulprm)
 			n = ntulos[srj][piste];
 			break;
 		 case 'P' :
-			n = min(tulprm->viimsija ,ntulos[srj][tulprm->piste]);
+			n = std::min(tulprm->viimsija ,ntulos[srj][tulprm->piste]);
 			break;
 		 case 'H' :
 			n = nhyl[srj];
@@ -5767,7 +5767,7 @@ int tulostasarja(INT *srj, tulostusparamtp *tulprm, INT *l, INT *sv, INT autotl)
 #endif
 		if (tulprm->kohde == L'P') {
 			if (tulprm->rajaus == L'P')
-				n1 = min(n, tulprm->viimsija) - tulprm->enssija + 1;
+				n1 = std::min(n, tulprm->viimsija) - tulprm->enssija + 1;
 			else
 				n1 = n;
 			clrln(ySize-1);
@@ -7168,7 +7168,7 @@ void joukkuepisteet(bool naytolle, tulostusparamtp *tulprm)
    tunnlaji = tulprm ? ((tulprm->optiot & 0x1c0) / 64) : 3;
    for (srj = 0; srj < sarjaluku; srj++) {
 	  if (!tulprm || tulprm->optiot & 0x400) {
-		  npiste = min(ntulos[srj][0], Sarjat[srj].npist[k_pv]);
+		  npiste = std::min(ntulos[srj][0], Sarjat[srj].npist[k_pv]);
 		  }
 	  else
 		  npiste = Sarjat[srj].npist[k_pv];

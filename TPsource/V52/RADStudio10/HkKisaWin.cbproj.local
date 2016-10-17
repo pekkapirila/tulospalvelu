@@ -467,7 +467,7 @@
     <File Path="..\Tp\TpApu.cpp"/>
     <File Path="..\Tp\TpComY.cpp"/>
     <File Path="..\Tp\TpLaitteet.cpp"/>
-    <File Path="..\..\..\..\pekka"/>
+    <File Path="..\..\..\..\tulospalvelu"/>
     <File Path="..\..\..\TPexe"/>
     <File Path="..\..\..\TPexe\Lib"/>
     <File Path="..\..\..\TPexe\Lib\V521"/>

@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-﻿#define LID_RTR			1
+#define LID_RTR			1
 #define LID_RTR2		2
 #define LID_ALGE		3
 #define LID_COMET		4

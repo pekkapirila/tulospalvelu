@@ -124,7 +124,7 @@
         <UsingDelphiRTL>true</UsingDelphiRTL>
         <IncludePath>C:\Program Files (x86)\Devart\SecureBridge for RAD Studio 10\Include\Win32\;..\cbTp\;..\cbHk\;$(BDS)\source\data\dbx\;..\tputilv2\;..\Tp\;..\include\;..\com\;..\Hk\;..\;..\..\..TPexe\Lib\V521\debug_build\;$(IncludePath)</IncludePath>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
-        <AllPackageLibs>rtl.lib;vcl.lib;dbrtl.lib;dbexpress.lib;DbxCommonDriver.lib;dsnap.lib;DBXMySQLDriver.lib;vclie.lib;bcbie.lib;IndySystem.lib;IndyProtocols.lib;IndyCore.lib;sbridge230.lib</AllPackageLibs>
+        <AllPackageLibs>rtl.lib;vcl.lib;dbrtl.lib;dbexpress.lib;DbxCommonDriver.lib;dsnap.lib;DBXMySQLDriver.lib;vclie.lib;bcbie.lib;IndySystem.lib;IndyProtocols.lib;IndyCore.lib;sbridge240.lib</AllPackageLibs>
         <VerInfo_Locale>1035</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
@@ -170,7 +170,7 @@
         <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <LinkPackageStatics>sbridge230.lib</LinkPackageStatics>
+        <LinkPackageStatics>sbridge240.lib</LinkPackageStatics>
         <Icon_MainIcon>HkKisaWin_Icon.ico</Icon_MainIcon>
         <Defines>_DEBUG;$(Defines)</Defines>
         <BCC_wcsu>false</BCC_wcsu>
@@ -192,7 +192,7 @@
         <TASM_Debugging>None</TASM_Debugging>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <LinkPackageStatics>sbridge230.lib</LinkPackageStatics>
+        <LinkPackageStatics>sbridge240.lib</LinkPackageStatics>
         <VerInfo_Build>2</VerInfo_Build>
         <Icon_MainIcon>HkKisaWin_Icon.ico</Icon_MainIcon>
         <VerInfo_Locale>1033</VerInfo_Locale>
@@ -219,7 +219,7 @@
         <Icon_MainIcon>..\cbHk\HKW.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_3_Win32)'!=''">
-        <LinkPackageStatics>sbridge230.lib</LinkPackageStatics>
+        <LinkPackageStatics>sbridge240.lib</LinkPackageStatics>
         <VerInfo_MajorVer>5</VerInfo_MajorVer>
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=5.12.0.96;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Build>96</VerInfo_Build>
@@ -237,7 +237,7 @@
         <ILINK_LibraryPath>..\..\..\TPexe\Lib\V521\release_build;$(ILINK_LibraryPath)</ILINK_LibraryPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_4_Win32)'!=''">
-        <LinkPackageStatics>sbridge230.lib</LinkPackageStatics>
+        <LinkPackageStatics>sbridge240.lib</LinkPackageStatics>
         <Defines>N_PV=2;VALUKU=200;$(Defines)</Defines>
         <LinkPackageImports>rtl.bpi;vcl.bpi;dbrtl.bpi;dbexpress.bpi;DbxCommonDriver.bpi;dsnap.bpi;DBXMySQLDriver.bpi;vclie.bpi;bcbie.bpi;IndySystem.bpi;IndyProtocols.bpi;IndyCore.bpi</LinkPackageImports>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
