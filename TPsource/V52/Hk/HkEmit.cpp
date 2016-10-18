@@ -25,6 +25,7 @@
 #include <malloc.h>
 #include <bkeybrd.h>
 #include <bstrings.h>
+#include <algorithm>
 #pragma hdrstop
 #include <conio.h>
 #include <dos.h>
@@ -4271,7 +4272,7 @@ void emitlista(tulostusparamtp *tulprm)
 #endif
    clrln(ySize-3);
    if (ch == 27) return;
-   elistaloppu = std::min((int)elistaloppu, emithead2);
+   elistaloppu = (std::min)((int)elistaloppu, emithead2);
    EnterCriticalSection(&emit_CriticalSection);
    EnterCriticalSection(&print_CriticalSection);
    _lseek(emitfile, sizeof(emittp) * (INT32)(elistaalku - 1), SEEK_SET);

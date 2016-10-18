@@ -24,6 +24,7 @@
 #include <time.h>
 #include <ctype.h>
 #include <malloc.h>
+#include <algorithm>
 #ifdef _CONSOLE
 #include <bkeybrd.h>
 #endif
@@ -2851,7 +2852,7 @@ INT tall_regnly(san_type *vastaus, INT r_no)
 					// mutta ei tuloksen tallentamista kilpailijalle
 
 					if (estaylim) {
-						int raja = std::min(4*TUNTI, (long)ylimraja);
+						int raja = (std::min)(4*TUNTI, (long)ylimraja);
 
 						aikatp vertt;
 						for (rtm = aikajono[ino]->aktrows - 1; rtm >= 0 &&
@@ -4169,7 +4170,7 @@ void inittimer(void)
 	if (maxntime == 0) {
 		maxntime = (kilpparam.maxvaluku + (lajatfl ? 2 : 1)) * maxrec
 			+ 50 + maxrec / 4;
-		maxntime = std::max(maxntime, 1000);
+		maxntime = (std::max)(maxntime, 1000);
 		maxntime += 5000;
 		}
 	for (ino = 0; ino <= maxjono || (lajatfl && ino < 2); ino++) {
