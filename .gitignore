@@ -1,7 +1,12 @@
 TPexe
 vc10
 Debug
+Release
 *.sdf
 *.suo
 *.opensdf
 *.stat
+__history
+Debug_Build
+Release_Build
+obj
