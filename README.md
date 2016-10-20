@@ -18,7 +18,7 @@ vuosien ajan.
 
 ## Description
 This is the source code of a suite of sports time keeping programs Pekka Pirilä
-(1945-2015) started developing in around 1989. The program originally
+(1945-2015) started developing in around 1986. The program originally
 specialized in orienteering, but was later amended to support additional
 sports. The user interface is in Finnish and there are Finnish language
 variables and comments throughout the source code. The source code is released 
